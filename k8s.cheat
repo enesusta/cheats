@@ -1,0 +1,13 @@
+% kubernetes
+
+# get pods
+kubectl get pods
+
+# get pods filter
+kubectl get pods | grep <deployment>
+
+# exec
+kubectl exec -it <deployment> /bin/bash
+
+# exec command
+kubectl exec -it <deployment> <command>

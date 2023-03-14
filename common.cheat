@@ -1,0 +1,10 @@
+% common
+
+# open notes
+open -n -a "Google Chrome" --args "--new-window" "<repo>"
+
+$ repo: echo "https://github.com/enesusta/<keyword>-notes"
+
+# markdown to pdf
+
+pandoc -s -o "<file_suffix>.pdf" "<file_suffix>.md" && open -a Preview "<file_suffix>.pdf"

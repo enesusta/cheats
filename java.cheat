@@ -1,0 +1,25 @@
+% java, jdk
+
+# jdk8
+source /Users/enesusta/.sdkman/bin/sdkman-init.sh
+sdk use java 8.0.265.hs-adpt
+
+# jdk11
+source /Users/enesusta/.sdkman/bin/sdkman-init.sh
+sdk use java 11.0.9.j9-adpt
+
+# grall_11
+source /Users/enesusta/.sdkman/bin/sdkman-init.sh
+sdk use java 20.2.0.r11-grl
+
+# jdk13
+source /Users/enesusta/.sdkman/bin/sdkman-init.sh
+sdk use java 13.0.2.j9-adpt
+
+# jdk14
+source /Users/enesusta/.sdkman/bin/sdkman-init.sh
+sdk use java 14.0.2.j9-adpt
+
+# jdk15
+source /Users/enesusta/.sdkman/bin/sdkman-init.sh
+sdk use java 15.0.0.j9-adpt

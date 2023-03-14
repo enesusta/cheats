@@ -1,0 +1,10 @@
+% mvn
+
+# spring run
+mvn clean spring-boot:run
+
+# quarkus run
+mvn clean quarkus:dev
+
+# test
+# mvn clean test
