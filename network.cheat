@@ -1,5 +1,8 @@
 % network
 
+# tcp port
+lsof -i tcp:<port>
+
 # Kill a process running on a given port
 lsof -i :<port> \
    | awk '{l=$2} END {print l}' \
@@ -21,7 +24,6 @@ ifconfig \
   | grep -Eo '([0-9]*\.){3}[0-9]*' \
   | grep -v '127.0.0.1' \
   | tail -n1
-
 
 # Find external, public IP address
 dig +short myip.opendns.com @resolver1.opendns.com

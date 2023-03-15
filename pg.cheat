@@ -10,18 +10,4 @@ $ container_id: echo "postgres"
 
 cat <dump_file> | docker exec -i <container_id> psql -U postgres
 
-
-
-
-
-
-
-
-
-
-
-
-# print something
-echo "My name is <name>!"
-
 $ name: whoami
