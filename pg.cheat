@@ -1,13 +1,9 @@
-% postgres, pg
+% pg
 
-# Import dump to pg database in docker
-
-echo "<dump>"
-echo "<container_id">
-
-$ dump: echo "dump"
-$ container_id: echo "postgres"
-
+# import, restore
 cat <dump_file> | docker exec -i <container_id> psql -U postgres
 
-$ name: whoami
+# export, backup
+docker exec -t <container_id> pg_dumpall -c -U postgres | gzip --best > dump
+
+$ container_id: docker ps --- --headers 1 --column 1

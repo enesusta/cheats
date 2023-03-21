@@ -1,0 +1,6 @@
+% unix
+
+# note
+cd <folder> && fzf --preview 'bat --color=always --style=numbers --line-range=:500 {}'
+
+$ folder: cat ~/folders | grep notes
