@@ -1,0 +1,10 @@
+% github
+
+# repo
+open -n -a "Google Chrome" --args "--new-window" "https://github.com/<repository>"
+
+$ repository: cat ~/repositories
+
+
+
+

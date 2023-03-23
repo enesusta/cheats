@@ -1,9 +1,9 @@
 % common
 
 # note
-open -n -a "Google Chrome" --args "--new-window" "<repo>"
+cd /Users/enesusta/<notes> && SHELL=/bin/zsh FZF_DEFAULT_COMMAND='find . -type f \( -iname \*.md -o -iname \*.yml -o -iname \*.yaml \)' fzf --bind 'enter:become(vim {})' --preview 'bat --color=always --style=numbers --line-range=:500 {}'
 
-$ repo: echo "https://github.com/enesusta/<keyword>-notes"
+$ notes: cat ~/folders | grep notes | sed 's/\/Users\/enesusta//g'
 
 # markdown to pdf
 pandoc -s -o "<file_suffix>.pdf" "<file_suffix>.md" && open -a Preview "<file_suffix>.pdf"
@@ -11,7 +11,7 @@ pandoc -s -o "<file_suffix>.pdf" "<file_suffix>.md" && open -a Preview "<file_su
 # cd
 cd <folder> && echo -e '\nHit [Ctrl]+[D] to exit this child shell.' && $SHELL
 
-$ folder: cat ~/folders
-
 # update local cheats
 cp -R ~/projects/cheats/* "/Users/enesusta/Library/Application Support/navi/cheats/enesusta__cheats"
+
+$ folder: cat ~/folders
